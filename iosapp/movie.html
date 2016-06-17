@@ -8,20 +8,30 @@
 body{
 	background-color: #000;
 }
+html, body, main {
+    height: 100%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .movie{
-	width: 640px; /*ここに動画の横幅をいれる*/
+	width: 800px; /*ここに動画の横幅をいれる*/
 	margin: 0 auto;
 }
 .movie video{
-	width: 640px;
+	width: 800px; /*ここに動画の横幅をいれる*/
 }
 </style>
 </head>
 <body>
-<div class="movie">
-	<video autoplay controls loop="loop">
-		<source src="movie.mp4" type="video/mp4" >
-	</video>
-</div>
+	<main>
+	<div class="movie">
+		<video autoplay controls loop="loop">
+			<source src="movie.mp4" type="video/mp4">
+		</video>
+	</div>
+	</main>
 </body>
 </html>

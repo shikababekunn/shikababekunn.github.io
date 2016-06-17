@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>iOS App Design</title>
+<link rel="stylesheet" href="reset.css">
+<style>
+body{
+	background-color: #000;
+}
+.movie{
+	width: 640px; /*ここに動画の横幅をいれる*/
+	margin: 0 auto;
+}
+.movie video{
+	width: 640px;
+}
+</style>
+</head>
+<body>
+<div class="movie">
+	<video autoplay controls loop="loop">
+		<source src="movie.mp4" type="video/mp4" >
+	</video>
+</div>
+</body>
+</html>
